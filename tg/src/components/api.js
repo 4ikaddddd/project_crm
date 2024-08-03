@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://test3.cola-workeu.com/api_1';
 
 export const connectWebSocket = (onMessage) => {
   const ws = new WebSocket('ws://localhost:5000');

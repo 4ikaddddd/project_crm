@@ -33,10 +33,10 @@ async function Login() {
 async function init() {
     await Login();
     await connectDB();
-    app.use('/api', userRoutes);
-    app.use('/api/parser', parserRoutes);
-    app.use('/api/subs', subsRoutes);
-    app.use('/api/filter_sms', filterSmsRoutes);
+    app.use('/api_1', userRoutes);
+    app.use('/api_1/parser', parserRoutes);
+    app.use('/api_1/subs', subsRoutes);
+    app.use('/api_1/filter_sms', filterSmsRoutes);
 
     // Запуск функции startParsingMessages и установка интервала на каждые 10 минут
     await startParsingMessages();
