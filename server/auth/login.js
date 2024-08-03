@@ -1,0 +1,11 @@
+const apiId = 22846194;
+const apiHash = '2bfb52cd239c0b6fb4ca2c247c37d407';
+
+// Сессионный ключ сохраненный в переменной
+let sessionString = '1AgAOMTQ5LjE1NC4xNjcuNTEBu7cHyeHUIdPjfxt8VGcromF+9VG8jnB+WnVqtl4ZT0USfZvXo3vi3IjZslfZo1AzF8KgN1qR8UVxPX6SDMrckJpLJOeS6iEsn+xFsvb+LjdqVYLPIpG47yUZIz2jOhNAkNOhlD63Ct5jMWlE3NqLuLaQUu8u+ClBiwwjdDwL0iSmGOS6ck05wGOnhpVlH88ekTQYYySWQRJL/4Q7Rmkft5RUoGO3at9uhhsfgKPODgjZz/pBE8ScUsEM2PFFJY5RdGy1iTUx2CotOag+dMMTQN+liuHfoGhfClv1aVJtCKGDNx80KBwTgFHggPHnJk/OSAb3ih+BOgtK2JP2+SmaYCs=';
+//1AgAOMTQ5LjE1NC4xNjcuNTEBu7cHyeHUIdPjfxt8VGcromF+9VG8jnB+WnVqtl4ZT0USfZvXo3vi3IjZslfZo1AzF8KgN1qR8UVxPX6SDMrckJpLJOeS6iEsn+xFsvb+LjdqVYLPIpG47yUZIz2jOhNAkNOhlD63Ct5jMWlE3NqLuLaQUu8u+ClBiwwjdDwL0iSmGOS6ck05wGOnhpVlH88ekTQYYySWQRJL/4Q7Rmkft5RUoGO3at9uhhsfgKPODgjZz/pBE8ScUsEM2PFFJY5RdGy1iTUx2CotOag+dMMTQN+liuHfoGhfClv1aVJtCKGDNx80KBwTgFHggPHnJk/OSAb3ih+BOgtK2JP2+SmaYCs=
+module.exports = {
+  apiId,
+  apiHash,
+  sessionString,
+};
