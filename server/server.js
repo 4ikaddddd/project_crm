@@ -9,7 +9,7 @@ const subsRoutes = require('./subs/routes/subsRoutes');
 const filterSmsRoutes = require('./filter_sms/routes/filter_smsRoutes');
 
 const app = express();
-const port = 5101;
+const port = 5102;
 
 // Middleware для обработки JSON данных
 app.use(express.json());
@@ -33,10 +33,10 @@ async function Login() {
 async function init() {
     await Login();
     await connectDB();
-    app.use('/api_1', userRoutes);
-    app.use('/api_1/parser', parserRoutes);
-    app.use('/api_1/subs', subsRoutes);
-    app.use('/api_1/filter_sms', filterSmsRoutes);
+    app.use('/api_3', userRoutes);
+    app.use('/api_3/parser', parserRoutes);
+    app.use('/api_3/subs', subsRoutes);
+    app.use('/api_3/filter_sms', filterSmsRoutes);
 
     // Запуск функции startParsingMessages и установка интервала на каждые 10 минут
     await startParsingMessages();

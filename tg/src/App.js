@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="bg-background min-h-screen">
         <Header isAuthenticated={isAuthenticated} />
-        <div className="container mx-auto p-4">
+        <div className="">
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

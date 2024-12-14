@@ -5,13 +5,13 @@ const linkRoutes = require('./routes/linkRoutes');
 
 const app = express();
 const PORT = 1000;
-const MONGODB_URI = 'mongodb+srv://k3655692:0MWNnYZUnSJWIJS1@cluster0.ucimtew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = 'mongodb+srv://k3655692:1WCBuJz8hPlXZCKf@api-2.bqt8pl1.mongodb.net/?retryWrites=true&w=majority&appName=api-2';
 
 // Настройки CORS
 app.use(cors());
 
 app.use(express.json());
-app.use('/api', linkRoutes);
+app.use('/links', linkRoutes);
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {

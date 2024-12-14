@@ -1,7 +1,7 @@
-const API_URL = 'https://test3.cola-workeu.com/api_1';
+const API_URL = 'http://localhost:5102/api_3';
 
 export const connectWebSocket = (onMessage) => {
-  const ws = new WebSocket('ws://localhost:5000');
+  const ws = new WebSocket('ws://localhost:5102');
 
   ws.onopen = () => {
     console.log('WebSocket connection opened');
